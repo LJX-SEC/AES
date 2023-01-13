@@ -315,7 +315,7 @@ int main(){
         fread(binary, tempSize, sizeof(unsigned char), hFile);
         fread(key, keySize, sizeof(unsigned char), hKey);
 
-        /* Padding Binary */
+        /* Padding Binary - PKCS#7 Padding */
         if(tempSize < binarySize){
             int paddingData = binarySize - tempSize;
             for(int idx = tempSize; idx < binarySize; idx++){
