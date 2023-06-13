@@ -258,7 +258,7 @@ int main(){
         phex(roundKey, Nkl * (10 + 1));
         printf("\n");
 
-        for(int idx; idx < binarySize; idx += Nkl){
+        for(int idx = 0; idx < binarySize; idx += Nkl){
             switchState(idx);
             printf("[+] %d block input : ", (idx/Nkl) + 1);
             phex((unsigned char *)state, 16);
