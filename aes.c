@@ -1,4 +1,4 @@
-//Coded by LJX
+//Coded by juhye0p
 #include "aes.h"
 
 void switchState(int idx){
